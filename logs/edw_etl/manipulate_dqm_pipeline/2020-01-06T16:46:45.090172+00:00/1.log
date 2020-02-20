@@ -1,0 +1,19 @@
+[2020-01-06 22:17:03,733] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: edw_etl.manipulate_dqm_pipeline 2020-01-06T16:46:45.090172+00:00 [queued]>
+[2020-01-06 22:17:03,772] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: edw_etl.manipulate_dqm_pipeline 2020-01-06T16:46:45.090172+00:00 [queued]>
+[2020-01-06 22:17:03,773] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-06 22:17:03,773] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-01-06 22:17:03,773] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-06 22:17:03,820] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): manipulate_dqm_pipeline> on 2020-01-06T16:46:45.090172+00:00
+[2020-01-06 22:17:03,823] {standard_task_runner.py:52} INFO - Started process 24931 to run task
+[2020-01-06 22:17:03,915] {logging_mixin.py:112} INFO - [2020-01-06 22:17:03,915] {dagbag.py:403} INFO - Filling up the DagBag from /home/DOM.INCENTIUS.COM/ankur.singh/workspace/airflow_poc/dags/etl_demo.py
+[2020-01-06 22:17:03,936] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: edw_etl.manipulate_dqm_pipeline 2020-01-06T16:46:45.090172+00:00 [running]> PATNA.DOM.INCENTIUS.COM
+[2020-01-06 22:17:03,945] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=edw_etl
+AIRFLOW_CTX_TASK_ID=manipulate_dqm_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-06T16:46:45.090172+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-01-06T16:46:45.090172+00:00
+[2020-01-06 22:17:04,171] {python_operator.py:114} INFO - Done. Returned value was: True
+[2020-01-06 22:17:13,647] {logging_mixin.py:112} INFO - [2020-01-06 22:17:13,646] {local_task_job.py:103} INFO - Task exited with return code 0

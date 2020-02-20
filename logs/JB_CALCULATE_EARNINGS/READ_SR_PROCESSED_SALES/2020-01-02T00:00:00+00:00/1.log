@@ -1,0 +1,21 @@
+[2020-01-07 15:45:52,436] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: JB_CALCULATE_EARNINGS.READ_SR_PROCESSED_SALES 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-07 15:45:52,447] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: JB_CALCULATE_EARNINGS.READ_SR_PROCESSED_SALES 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-07 15:45:52,447] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-07 15:45:52,447] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-01-07 15:45:52,447] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-07 15:45:52,565] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): READ_SR_PROCESSED_SALES> on 2020-01-02T00:00:00+00:00
+[2020-01-07 15:45:52,568] {standard_task_runner.py:52} INFO - Started process 27918 to run task
+[2020-01-07 15:45:52,680] {logging_mixin.py:112} INFO - [2020-01-07 15:45:52,680] {dagbag.py:403} INFO - Filling up the DagBag from /home/DOM.INCENTIUS.COM/ankur.singh/workspace/airflow_poc/dags/generate_job_dags.py
+[2020-01-07 15:45:53,009] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: JB_CALCULATE_EARNINGS.READ_SR_PROCESSED_SALES 2020-01-02T00:00:00+00:00 [running]> PATNA.dom.incentius.com
+[2020-01-07 15:45:53,023] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=JB_CALCULATE_EARNINGS
+AIRFLOW_CTX_TASK_ID=READ_SR_PROCESSED_SALES
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-02T00:00:00+00:00
+[2020-01-07 15:45:53,023] {logging_mixin.py:112} INFO - {'__index': 0, 'column_mapping': {}, 'columns_groupby': [], 'custom_input_validation': '', 'datamonth': 'CURRENT', 'drop_table': False, 'load_schema': 'OP_SR_PROCESSED_SALES', 'replacement_value': '', 'selected_columns': [], 'selected_item_checkbox_data': {}, 'step_id': 'READ_SR_PROCESSED_SALES', 'step_inputs': [], 'step_name': 'READ_SR_PROCESSED_SALES', 'step_type': 'read-dm-output'}
+[2020-01-07 15:45:53,023] {logging_mixin.py:112} INFO - <airflow.configuration.AirflowConfigParser object at 0x7fb518cb55c0>
+[2020-01-07 15:45:53,023] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-01-07 15:46:02,365] {logging_mixin.py:112} INFO - [2020-01-07 15:46:02,364] {local_task_job.py:103} INFO - Task exited with return code 0

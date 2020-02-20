@@ -1,0 +1,21 @@
+[2020-01-07 15:55:39,393] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: JB_CALCULATE_EARNINGS.GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-07 15:55:39,403] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: JB_CALCULATE_EARNINGS.GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-07 15:55:39,403] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-07 15:55:39,403] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-01-07 15:55:39,403] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-07 15:55:39,451] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR> on 2020-01-02T00:00:00+00:00
+[2020-01-07 15:55:39,459] {standard_task_runner.py:52} INFO - Started process 29013 to run task
+[2020-01-07 15:55:39,586] {logging_mixin.py:112} INFO - [2020-01-07 15:55:39,585] {dagbag.py:403} INFO - Filling up the DagBag from /home/DOM.INCENTIUS.COM/ankur.singh/workspace/airflow_poc/dags/generate_job_dags.py
+[2020-01-07 15:55:39,858] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: JB_CALCULATE_EARNINGS.GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR 2020-01-02T00:00:00+00:00 [running]> PATNA.dom.incentius.com
+[2020-01-07 15:55:39,869] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=JB_CALCULATE_EARNINGS
+AIRFLOW_CTX_TASK_ID=GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-02T00:00:00+00:00
+[2020-01-07 15:55:39,870] {logging_mixin.py:112} INFO - {'__index': 10, 'aggs': [{'field': 'net_amount', 'function': 'sum', 'result': 'product_level_sales'}], 'column_mapping': {}, 'columns_groupby': ['rep_id', 'product_id', 'product_name'], 'custom_input_validation': '', 'drop_table': False, 'replacement_value': '', 'selected_columns': [], 'selected_item_checkbox_data': {}, 'step_id': 'GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR', 'step_inputs': 'FILTER_OUT_INVALID_INPUTS_SR', 'step_name': 'GROUP_BY_FOR_PRODUCT_LEVEL_SALES_SR', 'step_type': 'group-by'}
+[2020-01-07 15:55:39,870] {logging_mixin.py:112} INFO - <airflow.configuration.AirflowConfigParser object at 0x7fdaa1c3b5c0>
+[2020-01-07 15:55:39,870] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-01-07 15:55:49,348] {logging_mixin.py:112} INFO - [2020-01-07 15:55:49,348] {local_task_job.py:103} INFO - Task exited with return code 0

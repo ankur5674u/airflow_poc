@@ -1,0 +1,22 @@
+[2020-01-06 16:22:08,563] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: edw_etl.load_and_dqm_pipeline 2020-01-06T10:52:05.383552+00:00 [queued]>
+[2020-01-06 16:22:08,575] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: edw_etl.load_and_dqm_pipeline 2020-01-06T10:52:05.383552+00:00 [queued]>
+[2020-01-06 16:22:08,575] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-06 16:22:08,575] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-01-06 16:22:08,575] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-06 16:22:08,627] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): load_and_dqm_pipeline> on 2020-01-06T10:52:05.383552+00:00
+[2020-01-06 16:22:08,629] {standard_task_runner.py:52} INFO - Started process 25795 to run task
+[2020-01-06 16:22:08,710] {logging_mixin.py:112} INFO - [2020-01-06 16:22:08,709] {dagbag.py:403} INFO - Filling up the DagBag from /home/DOM.INCENTIUS.COM/ankur.singh/workspace/airflow_poc/dags/etl_demo.py
+[2020-01-06 16:22:08,728] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: edw_etl.load_and_dqm_pipeline 2020-01-06T10:52:05.383552+00:00 [running]> PATNA.dom.incentius.com
+[2020-01-06 16:22:08,741] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=edw_etl
+AIRFLOW_CTX_TASK_ID=load_and_dqm_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-06T10:52:05.383552+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-01-06T10:52:05.383552+00:00
+[2020-01-06 16:22:08,947] {logging_mixin.py:112} INFO - carriage_service_04012019_04012020.csv
+[2020-01-06 16:22:08,947] {logging_mixin.py:112} INFO - 727496ad-36af-58ac-b234-e62d16080d23
+[2020-01-06 16:22:08,947] {logging_mixin.py:112} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x7f5d7b63f5f8>, 'dag': <DAG: edw_etl>, 'ds': '2020-01-06', 'next_ds': '2020-01-06', 'next_ds_nodash': '20200106', 'prev_ds': '2020-01-06', 'prev_ds_nodash': '20200106', 'ds_nodash': '20200106', 'ts': '2020-01-06T10:52:05.383552+00:00', 'ts_nodash': '20200106T105205', 'ts_nodash_with_tz': '20200106T105205.383552+0000', 'yesterday_ds': '2020-01-05', 'yesterday_ds_nodash': '20200105', 'tomorrow_ds': '2020-01-07', 'tomorrow_ds_nodash': '20200107', 'END_DATE': '2020-01-06', 'end_date': '2020-01-06', 'dag_run': <DagRun edw_etl @ 2020-01-06 10:52:05.383552+00:00: manual__2020-01-06T10:52:05.383552+00:00, externally triggered: True>, 'run_id': 'manual__2020-01-06T10:52:05.383552+00:00', 'execution_date': <Pendulum [2020-01-06T10:52:05.383552+00:00]>, 'prev_execution_date': <Pendulum [2020-01-06T10:52:05.383552+00:00]>, 'prev_execution_date_success': <Proxy at 0x7f5d69524888 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7f5d69525b70>>, 'prev_start_date_success': <Proxy at 0x7f5d694c0608 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7f5d694b6840>>, 'next_execution_date': <Pendulum [2020-01-06T10:52:05.383552+00:00]>, 'latest_date': '2020-01-06', 'macros': <module 'airflow.macros' from '/home/DOM.INCENTIUS.COM/ankur.singh/workspace/airflow_poc/venv/lib/python3.6/site-packages/airflow/macros/__init__.py'>, 'params': {}, 'tables': None, 'task': <Task(PythonOperator): load_and_dqm_pipeline>, 'task_instance': <TaskInstance: edw_etl.load_and_dqm_pipeline 2020-01-06T10:52:05.383552+00:00 [running]>, 'ti': <TaskInstance: edw_etl.load_and_dqm_pipeline 2020-01-06T10:52:05.383552+00:00 [running]>, 'task_instance_key_str': 'edw_etl__load_and_dqm_pipeline__20200106', 'test_mode': False, 'var': {'value': None, 'json': None}, 'inlets': [], 'outlets': [], 'file_name': 'carriage_service_04012019_04012020.csv', 'batch_id': '727496ad-36af-58ac-b234-e62d16080d23', 'templates_dict': None}
+[2020-01-06 16:22:09,038] {python_operator.py:114} INFO - Done. Returned value was: True
+[2020-01-06 16:22:18,499] {logging_mixin.py:112} INFO - [2020-01-06 16:22:18,498] {local_task_job.py:103} INFO - Task exited with return code 0
